@@ -229,21 +229,21 @@ double montoTotalAcumulado = 0;
 
 
 
-                 Console.WriteLine("EMPLEADO MAS PROXIMO ES:");
+                //  Console.WriteLine("EMPLEADO MAS PROXIMO ES:");
              
  
-                  int empleadoConMayorAntiguedad = 0;
-for (int j = 1; j < 3; j++)
-{
-    
-
-    if (antiguedadTotal[j] >= antiguedadTotal[empleadoConMayorAntiguedad])
+    int empleadoConMayorAntiguedad = 0;
+    for (int j = 1; j < 3; j++)
     {
-       
-        empleadoConMayorAntiguedad = j; // Actualizamos el índice del empleado con mayor antigüedad
+        
+
+        if (antiguedadTotal[j] >= antiguedadTotal[empleadoConMayorAntiguedad])
+        {
+        
+            empleadoConMayorAntiguedad = j; // Actualizamos el índice del empleado con mayor antigüedad
+        }
+    
     }
-   
-}
           Console.WriteLine("El empleado más próximo es:");
         Console.WriteLine(empleado[empleadoConMayorAntiguedad].Nombre + " - " + empleado[empleadoConMayorAntiguedad].Apellido);
         Console.WriteLine(empleado[empleadoConMayorAntiguedad].FechaDeN);
