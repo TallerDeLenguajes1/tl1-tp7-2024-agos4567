@@ -3,11 +3,6 @@ using System;
 using System.Security.Cryptography;
 
 
-namespace Myapp
-   {
-    class Program
-    {
-        static void Main(string[] args){
 
 
             Calculadora cal1= new Calculadora();
@@ -30,15 +25,16 @@ namespace Myapp
             
                  do
                  {
-                     Console.WriteLine("Ingrese el primer numero: ");
-                entrada=Console.ReadLine();
-
-                valido=double.TryParse(entrada, out num);
-
+          
 
                 Console.WriteLine("Ingresa la operaciona  realizar \n-1suma\n 2-resta\n 3-multiplicacion\n 4-division\n 5 limpiar\n");
                 entrada=Console.ReadLine();
                 valido=int.TryParse(entrada,out opcion);
+                 Console.WriteLine("Ingrese el primer numero: ");
+                entrada=Console.ReadLine();
+
+                valido=double.TryParse(entrada, out num);
+
 
                  switch (opcion)
                  {
@@ -98,6 +94,3 @@ namespace Myapp
 
 
 
-        }
-    }
-   }
