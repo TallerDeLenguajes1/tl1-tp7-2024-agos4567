@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
-
+using System.Linq;
 
 namespace EmpresaConsola
 {
@@ -116,7 +115,7 @@ namespace EmpresaConsola
 
           if (estadoCivil =='c' || estadoCivil=='C')
           {
-            sueldoTotal= sueldoTotal +15000;
+            sueldoTotal= sueldoTotal +150000;
           }
 
 

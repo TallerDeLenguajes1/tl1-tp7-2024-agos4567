@@ -1,18 +1,11 @@
-﻿using System;
+﻿﻿// See https://aka.ms/new-console-template for more information
+using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
+using System.Linq;
 using EmpresaConsola;
 
 
 
-
-namespace Empresas
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // List<Tarea> ListaDeDatos=new List<Tarea>(); //COLECCION
 
 Empleados[] empleado = new Empleados[3];
 DateTime[] antiguedad = new DateTime[3];
@@ -254,9 +247,4 @@ double montoTotalAcumulado = 0;
         Console.WriteLine("Su antigüedad es: " + antiguedadTotal[empleadoConMayorAntiguedad]);
 
         Console.WriteLine("El monto TOTAL ACUMULADO es "+ montoTotalAcumulado);
-
-        }
-    }
-}
-
 
